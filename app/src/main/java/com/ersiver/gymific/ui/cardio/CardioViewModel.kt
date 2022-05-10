@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import com.ersiver.gymific.model.Workout
 import com.ersiver.gymific.repository.WorkoutRepository
-import com.ersiver.gymific.util.CARDIO
+import com.ersiver.gymific.util.EASY
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import timber.log.Timber
@@ -19,7 +19,7 @@ class CardioViewModel @ViewModelInject constructor(repository: WorkoutRepository
 
     private var cardioUiModelFlow: Flow<CardioUiModel> = repository.getWorkouts().map { list ->
         val cardio = list.filter { workout ->
-            workout.category.contains(CARDIO, true)
+            workout.category.contains(EASY, true)
         }
         CardioUiModel(cardio)
     }

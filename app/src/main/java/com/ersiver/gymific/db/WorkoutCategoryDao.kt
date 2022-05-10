@@ -15,4 +15,7 @@ interface WorkoutCategoryDao{
 
     @Query("SELECT * FROM category_table")
     fun getCategories(): Flow<List<WorkoutCategory>>
+
+    @Query("DELETE FROM category_table")
+    fun deleteAll()
 }

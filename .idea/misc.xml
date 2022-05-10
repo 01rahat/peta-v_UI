@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/PRODUCT/Integration/Gymific-master/app/src/main/res/layout/fragment_home.xml" value="0.1431159420289855" />
-        <entry key="..\:/PRODUCT/Integration/Gymific-master/app/src/main/res/layout/fragment_legs.xml" value="0.1431159420289855" />
+        <entry key="..\:/PRODUCT/Gymific-UI-main/app/src/main/res/layout/fragment_cardio.xml" value="0.264" />
+        <entry key="..\:/PRODUCT/Gymific-UI-main/app/src/main/res/layout/fragment_legs.xml" value="0.12158054711246201" />
+        <entry key="..\:/PRODUCT/Gymific-UI-main/app/src/main/res/layout/fragment_view_pager.xml" value="0.12158054711246201" />
+        <entry key="..\:/PRODUCT/Gymific-UI-main/app/src/main/res/layout/framgent_arms.xml" value="0.234375" />
+        <entry key="..\:/PRODUCT/Gymific-UI-main/app/src/main/res/layout/workout_view_item.xml" value="0.234375" />
       </map>
     </option>
   </component>

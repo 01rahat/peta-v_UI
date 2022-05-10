@@ -23,6 +23,7 @@ class PopulateWorkoutTableWorker @WorkerInject constructor(
 
     override suspend fun doWork(): Result = coroutineScope {
         try {
+            database.workoutDao.deleteAll()
             applicationContext.resources.openRawResource(R.raw.workouts).use { inputStream ->
                 JsonReader(inputStream.reader()).use { jsonReader ->
                     val type = object : TypeToken<List<Workout>>() {}.type

@@ -17,5 +17,8 @@ interface WorkoutDao {
     fun getWorkouts(): Flow<List<Workout>>
 
     @Query("SELECT * FROM workout_table WHERE id LIKE :id")
-     fun getWorkout(id: Int): LiveData<Workout>
+    fun getWorkout(id: Int): LiveData<Workout>
+
+    @Query("DELETE FROM workout_table")
+    fun deleteAll()
 }

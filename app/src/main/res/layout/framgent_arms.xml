@@ -16,7 +16,7 @@
         tools:context=".ui.favourite.FavouriteFragment">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/arm_list"
+            android:id="@+id/hard_list"
             listData="@{viewModel.armsUiModel.armsWorkouts}"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

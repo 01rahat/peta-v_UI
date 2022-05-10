@@ -22,6 +22,7 @@ class PopulateCategoryTableWorker @WorkerInject constructor(
 
     override suspend fun doWork(): Result {
         return try {
+            database.categoryDao.deleteAll()
             applicationContext.resources.openRawResource(R.raw.categories).use { inputStream ->
                 JsonReader(inputStream.reader()).use { jsonReader ->
                     val type = object : TypeToken<List<WorkoutCategory>>() {}.type

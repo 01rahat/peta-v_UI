@@ -17,10 +17,10 @@
     <string name="title_home">Home</string>
     <string name="title_sort_order">Sort order</string>
     <string name="title_workout">Workout</string>
-    <string name="title_arms">Week 3</string>
+    <string name="title_arms">Hard</string>
     <string name="title_favourite">Favourite</string>
-    <string name="title_cardio">Week 1</string>
-    <string name="title_legs">Week 2</string>
+    <string name="title_cardio">Easy</string>
+    <string name="title_legs">Medium</string>
     <string name="title_detail">Detail</string>
     <string name="title_set_favourite">Set favourite</string>
     <string name="title_sort_date">Newest first</string>

@@ -17,11 +17,11 @@
         tools:context=".ui.legs.LegsFragment">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/leg_list"
+            android:id="@+id/medium_list"
             android:layout_width="match_parent"
-            app:listData="@{viewModel.legsUiModel.workouts}"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:listData="@{viewModel.legsUiModel.workouts}"
             tools:listitem="@layout/workout_view_item" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>

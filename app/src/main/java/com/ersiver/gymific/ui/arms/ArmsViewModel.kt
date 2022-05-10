@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import com.ersiver.gymific.model.Workout
 import com.ersiver.gymific.repository.WorkoutRepository
-import com.ersiver.gymific.util.ARMS
+import com.ersiver.gymific.util.HARD
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import timber.log.Timber
@@ -19,7 +19,7 @@ class ArmsViewModel @ViewModelInject constructor(repository: WorkoutRepository) 
 
     private val armsUiModelFlow: Flow<ArmsUiModel> = repository.getWorkouts().map { workouts ->
         val arms = workouts.filter { workout ->
-            workout.category.contains(ARMS, true)
+            workout.category.contains(HARD, true)
         }
         ArmsUiModel(arms)
     }

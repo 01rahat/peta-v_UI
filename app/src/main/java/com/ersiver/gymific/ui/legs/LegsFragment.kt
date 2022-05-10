@@ -34,9 +34,9 @@ class LegsFragment : Fragment() {
     private fun setupRecyclerView() {
         adapter = WorkoutAdapter(true)
         binding.apply {
-            legList.adapter = adapter
+            mediumList.adapter = adapter
             val decoration = DividerItemDecoration(context, DividerItemDecoration.VERTICAL)
-            legList.addItemDecoration(decoration)
+            mediumList.addItemDecoration(decoration)
         }
     }
 }

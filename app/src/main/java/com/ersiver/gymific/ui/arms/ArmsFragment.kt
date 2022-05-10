@@ -34,9 +34,9 @@ class ArmsFragment : Fragment() {
     private fun setupRecyclerView() {
         adapter = WorkoutAdapter(true)
         binding.apply {
-            armList.adapter = adapter
+            hardList.adapter = adapter
             val decoration = DividerItemDecoration(context, DividerItemDecoration.VERTICAL)
-            armList.addItemDecoration(decoration)
+            hardList.addItemDecoration(decoration)
         }
     }
 }

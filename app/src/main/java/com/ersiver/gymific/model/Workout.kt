@@ -16,6 +16,7 @@ class Workout(
     val iconCode: String,
     val instruction: String,
     var isSaved: Boolean,
+    var reps: String,
     var timeSaved: Long,
     var isRecommended: Boolean
 ) : Parcelable

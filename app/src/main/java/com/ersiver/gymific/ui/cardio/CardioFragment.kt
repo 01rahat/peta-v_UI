@@ -35,9 +35,9 @@ class CardioFragment : Fragment() {
     private fun setupRecyclerView() {
         adapter = WorkoutAdapter(true)
         binding.apply {
-            cardioList.adapter = adapter
+            easyList.adapter = adapter
             val decoration = DividerItemDecoration(context, DividerItemDecoration.VERTICAL)
-            cardioList.addItemDecoration(decoration)
+            easyList.addItemDecoration(decoration)
         }
     }
 }

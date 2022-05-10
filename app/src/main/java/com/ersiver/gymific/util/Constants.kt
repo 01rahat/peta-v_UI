@@ -5,9 +5,9 @@ package com.ersiver.gymific.util
  */
 const val DATABASE_NAME = "gymific-db"
 const val PREFERENCE_NAME = "user-preference"
-const val CARDIO = "Cardio"
-const val LEGS = "Legs"
-const val ARMS = "Arms"
+const val EASY = "Easy"
+const val MEDIUM = "Medium"
+const val HARD = "Hard"
 const val BY_DATE = "BY_DATE"
 const val BY_TITLE = "BY_TITLE"
 const val BY_TIME = "BY_TIME"
