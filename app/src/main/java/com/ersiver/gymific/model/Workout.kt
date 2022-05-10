@@ -11,6 +11,7 @@ class Workout(
     @PrimaryKey
     val id: Int,
     val title: String,
+    val reps:String,
     val time: Long,
     val category: String,
     val iconCode: String,
